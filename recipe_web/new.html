@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Recipes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container to hold the table and about section */
+    .page-container {
+      display: flex;
+    }
+
+    /* Main table container */
+    .main-content {
+      flex: 3; /* Takes up more space */
+      padding: 20px;
+    }
+
+    /* About section styling */
+    .about-section {
+      flex: 1; /* Takes up less space */
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-left: 2px solid #ccc;
+    }
+
+    /* General table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #fbe9d4;
+    }
+  </style>
+</head>
+<body>
+  <header style="text-align: center; padding: 10px; background-color: #f9f9e4;">
+    <h1>Delicious Recipes</h1>
+  </header>
+
+  <div class="page-container">
+    <!-- Main content -->
+    <div class="main-content">
+      <table>
+        <tr>
+          <th colspan="2">Pancake</th>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <img src="https://via.placeholder.com/200" alt="Pancake" style="max-width: 100%;">
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">Description</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            This pancake recipe is quick and easy to implement, and it is the perfect breakfast for your growing kids. But don't let them have too much! :)
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">Ingredients</th>
+        </tr>
+        <tr>
+          <td colspan="2">Flour, Milk, Eggs, Sugar, Baking Powder, Butter.</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- About section -->
+    <div class="about-section">
+      <h2>About Me</h2>
+      <p>Hello! I'm [Your Name], a passionate cook who loves experimenting with recipes. Welcome to my collection of delicious dishes that are quick, easy, and family-friendly.</p>
+      <p>Contact me at: yourname@example.com</p>
+    </div>
+  </div>
+</body>
+</html>
