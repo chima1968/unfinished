@@ -102,3 +102,27 @@ table {
 .search-input:hover {
     border-color: #888;
   }
+  button{
+    background-color: beige;
+    color: #888;
+    border:none ;
+    padding:5px;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    
+    
+    
+  }
+  button:hover{
+    color: tomato;
+  }
+  button:active{
+    color: #0078d7;
+  }
