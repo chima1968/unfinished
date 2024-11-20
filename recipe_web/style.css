@@ -73,9 +73,11 @@ table {
 
 
 .search-container {
-    position: relative;
-    width: 100px;
+    display: flex;
+    
+    width: 300px;
     margin: 2px;
+    justify-content: flex-start ;
 }
 
 
@@ -85,7 +87,7 @@ table {
      
     display: flex;
     width: 80%;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 300px;
     padding: 15px 30px;
     border: 2px  #ccc;
@@ -116,9 +118,10 @@ button{
     color: #888;
     border:none ;
     padding:5px;    
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 30px;
     width: 100px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
