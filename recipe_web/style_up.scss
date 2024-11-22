@@ -7,6 +7,12 @@
     align-items: center;
     flex-direction: $direction;
 }
+@mixin organize(){
+    background-color: $backGrouund_about;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
 .search-container{
     @include flexCenter(row)
 }
@@ -23,11 +29,10 @@ h1 {
     padding: 8m;
     border-radius: 20px;
 }
-img {
-    display: block;
-    margin:auto;
-    border-radius:20px;
+header{
+    position: sticky;
 }
+
 h2 {
     margin: 20px 0;
     background-color:$background_color;
@@ -40,7 +45,7 @@ video{
     border-radius: 10px;
 }
 table {
-    width:65%;
+    width:95%;
     border-collapse: collapse;
     margin: 5px;
     
@@ -53,24 +58,23 @@ table {
     border-radius: 10px;
 }
 .main-content {
-    flex:3;
+    flex:auto;
     padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 15px;
+    @include organize;
+    border-radius:15px;
 }
 .page-container {
     display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding: 10px;
 }
-
-
 .search-container {
-    position: relative;
-    width: 100px;
+    display: flex;    
+    width: 300px;
     margin: 2px;
+    justify-content: flex-start ;
 }
-
-
-
 
 .search-input {
     width: 100%;
@@ -83,30 +87,29 @@ table {
     transition: border-color 0.3s ease-in-out;
 } 
 
-
-
 .search-input:hover {
     border-color: #888;
 }
 
 button{
+    flex:auto;
     background-color: beige;
     color: #888;
     border:none ;
-    padding:5px;
-    border-radius: 5px;
+    padding:5px;    
+    border-radius: 10px;
+    height: 30px;
     width: 100px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     font-style: bold;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    
-    
-    
+   
 }
+
 
 button:hover{
     color: $hover_color;
@@ -115,5 +118,32 @@ button:hover{
 button:active{
     color: $active_color;
 }
+.about_content{
+    background-color: $backGrouund_about;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+}
+.video_ {
+    display: flex;
+    justify-content:center;
+    border-radius: 20px;
+}
+.images {
+    img {
+        border-radius: 20px;
+        height:auto;
+        box-shadow: black;
+    }
+    margin:auto;
+    padding: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+      
 
+}
 

@@ -55,6 +55,18 @@ h2 {
     border-radius: 15px;
 
 }
-
+div:hover{
+    color: tomato;
+}
+a:visited {
+    color:tomato;
+}
+a:active{
+    color: #0000FF;
+}
+.box{
+    
+    border:5px dashed yellow;
+}
 
 
